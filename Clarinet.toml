@@ -1,0 +1,43 @@
+[project]
+name = 'P2P-Last-Mile-Delivery'
+description = ''
+authors = []
+telemetry = true
+cache_dir = '.\.cache'
+requirements = []
+[contracts.P2P-Last-Mile-Delivery]
+path = 'contracts/P2P-Last-Mile-Delivery.clar'
+clarity_version = 3
+epoch = 3.1
+
+[contracts.delivery-proof]
+path = 'contracts/delivery-proof.clar'
+clarity_version = 3
+epoch = 3.1
+
+[contracts.delivery-analytics]
+path = 'contracts/delivery-analytics.clar'
+clarity_version = 3
+epoch = 3.1
+
+[contracts.delivery-surge-pricing]
+path = 'contracts/delivery-surge-pricing.clar'
+clarity_version = 3
+epoch = 3.1
+
+[contracts.deliverer-availability]
+path = 'contracts/deliverer-availability.clar'
+clarity_version = 3
+epoch = 3.1
+[repl.analysis]
+passes = ['check_checker']
+
+[repl.analysis.check_checker]
+strict = false
+trusted_sender = false
+trusted_caller = false
+callee_filter = false
+
+[repl.remote_data]
+enabled = false
+api_url = 'https://api.hiro.so'
